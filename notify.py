@@ -6,7 +6,9 @@ from bs4 import BeautifulSoup
 from curl_cffi import requests
 
 BASE = "https://jkt48.com"
-WEBHOOK = os.environ["https://discord.com/api/webhooks/1571742541085151282/uHSn5LKc6dcgSRCFf1u48f3NMlpIXduyrnu0zhVNvLpHnWWcKInb7IHXztCIkckdCSDe"]
+WEBHOOK = os.environ.get("DISCORD_WEBHOOK_URL")
+if not WEBHOOK:
+    raise SystemExit("Error: Environment variable DISCORD_WEBHOOK_URL belum diatur!")
 STATE = "data/seen.json"
 
 

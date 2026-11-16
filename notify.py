@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from curl_cffi import requests
 
 BASE = "https://jkt48.com"
-WEBHOOK = os.environ["DISCORD_WEBHOOK_URL"]
+WEBHOOK = os.environ["https://discord.com/api/webhooks/1571742541085151282/uHSn5LKc6dcgSRCFf1u48f3NMlpIXduyrnu0zhVNvLpHnWWcKInb7IHXztCIkckdCSDe"]
 STATE = "data/seen.json"
 
 
